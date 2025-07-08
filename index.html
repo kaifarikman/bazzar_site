@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bazzar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header {
+            padding: 30px;
+        }
+
+        .logo-img {
+            height: 100px;
+            margin: 10px 0;
+        }
+
+        .desc {
+            font-size: 16px;
+            margin: 15px 0;
+            color: #aaa;
+        }
+
+        .nav-buttons {
+            margin-top: 30px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            background: #222;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #444;
+        }
+
+        .events-block {
+            padding: 40px 20px;
+            background: #111;
+        }
+
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .event-card {
+            display: flex;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            justify-content: space-between;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .event-date-box {
+            background: #b30000;
+            color: #fff;
+            text-align: center;
+            padding: 8px 12px;
+            border-radius: 6px;
+            width: 60px;
+            flex-shrink: 0;
+        }
+
+        .event-date-box .month {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #eee;
+        }
+
+        .event-date-box .day {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+
+        .event-details {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .city {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .info {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 2px;
+        }
+
+        .venue {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .ticket-btn {
+            background: #b30000;
+            color: #fff;
+            padding: 10px 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .ticket-btn:hover {
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Логотип -->
+<div class="header">
+    <h1 class="brand-title">Bazzar</h1>
+    <div class="logo">
+        <img src="logo.png" alt="Bazzar Logo" class="logo-img" />
+    </div>
+    <p class="desc">About Us</p>
+
+    <!-- Кнопки навигации -->
+    <div class="nav-buttons">
+        <a href="https://t.me/bazzaru0" target="_blank" class="nav-btn">Photo reports</a>
+        <a href="https://instagram.com/yourprofile" target="_blank" class="nav-btn">Contacts</a>
+    </div>
+</div>
+
+<!-- Секция событий -->
+<div id="events" class="events-block">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-list">
+
+        <div class="event-card">
+            <div class="event-date-box">
+                <div class="month">JUL</div>
+                <div class="day">18</div>
+            </div>
+            <div class="event-details">
+                <div class="city">Toronto</div>
+                <div class="info">Friday</div>
+                <div class="venue">Acqua Supper Club</div>
+            </div>
+            <a href="https://whitenightstour.eventbrite.ca" target="_blank" class="ticket-btn">TICKETS</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date-box">
+                <div class="month">JUL</div>
+                <div class="day">25</div>
+            </div>
+            <div class="event-details">
+                <div class="city">New York</div>
+                <div class="info">Friday</div>
+                <div class="venue">Lou Lou Club</div>
+            </div>
+            <a href="https://bazzarny.eventbrite.ca" target="_blank" class="ticket-btn">TICKETS</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date-box">
+                <div class="month">JUL</div>
+                <div class="day">26</div>
+            </div>
+            <div class="event-details">
+                <div class="city">Los Angeles</div>
+                <div class="info">Saturday</div>
+                <div class="venue">Kookaburra Club</div>
+            </div>
+            <a href="https://bazzarla.eventbrite.ca" target="_blank" class="ticket-btn">TICKETS</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
