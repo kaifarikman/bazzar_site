@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Bazzar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<!-- Логотип -->
+<div class="header">
+    <h1 class="brand-title">Bazzar</h1>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Bazzar Logo" class="logo-img">
+    </div>
+    <p class="desc">About Us</p>
+
+    <!-- Кнопки навигации -->
+    <div class="nav-buttons">
+        <a href="https://t.me/bazzaru0" target="_blank" class="nav-btn">Photo reports</a>
+        <a href="https://instagram.com/yourprofile" target="_blank" class="nav-btn">Contacts</a>
+    </div>
+</div>
+
+<!-- Секция событий -->
+<div id="events" class="events-block">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-list">
+        {% for event in events %}
+        <div class="event-card">
+            <div class="event-date-box">
+                <div class="month">{{ event.date.split()[0][:3]|upper }}</div>
+                <div class="day">{{ event.date.split()[1] }}</div>
+            </div>
+            <div class="event-details">
+                <div class="city">{{ event.city }}</div>
+                <div class="info">{{ event.day }}</div>
+                <div class="venue">{{ event.club }}</div>
+            </div>
+            <a href="{{ event.url }}" target="_blank" class="ticket-btn">TICKETS</a>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>
