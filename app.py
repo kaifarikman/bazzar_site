@@ -9,7 +9,6 @@ def index():
     Toronto, July 18, Acqua Supper Club, friday,19+
     July 25 - New York , Lou Lou Club, friday, 21+
     July 26 - Los Angeles ,Kookaburra Club, saturday, 18+
-    :return:
     '''
     events = [
         {
